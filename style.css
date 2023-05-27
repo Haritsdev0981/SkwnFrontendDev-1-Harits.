@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-brown: #553B33;
+    --color-brown-dark: #2F241F;
+    --color-green: #E5F0B6;
+}
+
+
+.navbar {
+    padding: 2.87rem 6.25rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+.container {
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.branding {
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.branding h1 {
+    color: var(--color-brown-dark);
+}
+
+.logo-nav {
+    height: 48px;
+}
+
+.my-nav {
+    display: flex;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.my-nav li {
+    list-style: none;
+}
+
+.content-nav {
+    gap: 1rem;
+    display: flex;
+}
+
+.btn-singup {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color-green);
+}
+
+.icon-bag {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--color-green);
+    background-color: var(--color-brown);
+}
+
+header {
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    padding-right: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    flex-grow: 7;
+    /* background-color: aqua; */
+}
+
+.buttons-group {
+    display: flex;
+    /* background-color: red; */
+    gap: 1rem;
+}
+
+.feature-header {
+
+    display: flex;
+    padding: 1.375rem 2.8125rem;
+    border-radius: 12px;
+    gap: 1.125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header {
+    font-weight: 800;
+    font-size: 72px;
+    margin-bottom: 3rem;
+}
+
+
+.title {
+    padding-left: 8.875rem;
+    /* background-color: aqua; */
+}
+
+.hero p span {
+    color: var(--color-brown);
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-border {
+    border: 1px solid #553B33;
+}
+
+.product-header {
+    background-color: grey;
+    flex-basis: 4;
+}
+
+.header-img {
+    padding-left: 3rem;
+}
+
+.title-post {
+    font-size: 64px;
+    color: white;
+}
+
+.price {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+}
+
+.detail-header {
+    padding: 1rem 1.4rem;
+    display: flex;
+    color: white;
+    background-color: var(--color-brown-dark);
+    border-radius: 12px;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
