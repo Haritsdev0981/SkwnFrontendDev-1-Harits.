@@ -15,7 +15,6 @@
 
     <!-- swiper js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -206,53 +205,68 @@
     <!-- footer -->
     <footer>
         <div class="footer-desc">
-          <div class="logo">
-            <img src="IMG/Vector.png" class="logo-footer" alt="logo">
-            <p>Dekoor</p>
-          </div>
-          <p class="desc-footer">
-            Dekoor is a furniture company created to fulfill the needs of family
-            with aesthetic feeling in their furniture. Always pay attention to
-            details and give clear communication for the customers. Priority of
-            our design is comfortability.
-          </p>
-          <p class="copyright">©Copyright 2022 Dekoor</p>
+            <div class="logo">
+                <img src="IMG/Vector.png" class="logo-footer" alt="logo">
+                <p>Dekoor</p>
+            </div>
+            <p class="desc-footer">
+                Dekoor is a furniture company created to fulfill the needs of family
+                with aesthetic feeling in their furniture. Always pay attention to
+                details and give clear communication for the customers. Priority of
+                our design is comfortability.
+            </p>
+            <p class="copyright">©Copyright 2022 Dekoor</p>
         </div>
         <div class="footer-links">
-          <div class="footer-link">
-            <h4>Support</h4>
-            <span>FAQ</span>
-            <span>Shipping & Returns</span>
-            <span>Care guide</span>
-            <span>Redeem warranty</span>
-          </div>
-          <div class="footer-link">
-            <h4>Social Media</h4>
-            <span>Instagram</span>
-            <span>Facebook</span>
-            <span>Twitter</span>
-            <span>TikTok</span>
-          </div>
-          <div class="footer-link">
-            <h4>About Us</h4>
-            <span>Our Story</span>
-            <span>Designer</span>
-            <span>Craftmanship</span>
-            <span>Sustainability</span>
-          </div>
+            <div class="footer-link">
+                <h4>Support</h4>
+                <span>FAQ</span>
+                <span>Shipping & Returns</span>
+                <span>Care guide</span>
+                <span>Redeem warranty</span>
+            </div>
+            <div class="footer-link">
+                <h4>Social Media</h4>
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>Twitter</span>
+                <span>TikTok</span>
+            </div>
+            <div class="footer-link">
+                <h4>About Us</h4>
+                <span>Our Story</span>
+                <span>Designer</span>
+                <span>Craftmanship</span>
+                <span>Sustainability</span>
+            </div>
         </div>
-      </footer>
+    </footer>
     <!-- footer -->
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        new Swiper('.swiper', {
-            slidesPerView: 3,
-            grid: {
-                rows: 3,
+        var swiper = new Swiper(".photos", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            mousewheel: {
-                forceToAxis: true,
-            },
+        });
+
+        $.get("https://course-api.com/react-store-products", function (data) {
+            data.forEach((product) => {
+                $(".swiper-wrapper").append(`
+    <div class="swiper-slide">
+        <img src="${product.image}" alt="product" />
+        <div class="detail-product">
+            <span class="price-tag">$${product.price}</span>
+            <span class="product-name">${product.name}</span>
+        </div>
+    </div>
+    `);
+            });
         });
     </script>
 </body>
