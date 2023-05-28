@@ -13,6 +13,10 @@
     <!--Icon from Bootstap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -123,29 +127,133 @@
     <!-- categories -->
     <section class="container-categories">
         <div class="img-categories">
-            <div class="img-"></div>
-            <div class="img-"></div>
-            <div class="img-"></div>
+            <div class="img-ce-content lebar1"></div>
+            <div class="img-ce-content lebar2"></div>
+            <div class="img-ce-content lebar-main"></div>
         </div>
         <div class="content-categories">
-            <p>Categories</p>
-            <p>Furniture Sets Recommendations</p>
+            <p class="cate">Categories</p>
+            <p class="title-cate">Furniture Sets Recommendations</p>
             <div class="detail-categories">
-                <p>Bedroom</p>
-                <div>
-                    <p class="option-active">Living Room
-                        <span>Enjoy a great living room aesthetics with your family  Designs created for increased comfortability</span>
-                    </p>     
+                <div class="option-cate">
+                    <p>Bedroom</p>
                 </div>
-                <p>Home Office</p>
-                <p>Gaming Room</p>
+                <div class="option-cate bg-active">
+                    <p class="option-active">Living Room
+                        <span class="test">Enjoy a great living room aesthetics with your family Designs created for
+                            increased comfortability</span>
+                    </p>
+                </div>
+                <div class="option-cate">
+                    <p>Home Office</p>
+                </div>
+                <div class="option-cate">
+                    <p>Gaming Room</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- categories -->
 
-    <script>
+    <!-- swiper -->
+    <section class="best-seller-section">
+        <div class="section-header">
+            <div class="wrap-title">
+                <div class="section-title">
+                    <h2>OUR PRODUCTS</h2>
+                </div>
+                <div class="section-sub-title">
+                    <h3>This month’s best seller</h3>
+                </div>
+            </div>
+            <a href="">
+                <div class="button-best-seller">
+                    <span>SEE MORE</span>
+                </div>
+            </a>
+        </div>
+        <div class="swiper photos">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-navigation">
+                <div class="swiper-button-prev">
+                    <!-- <i class="bi bi-chevron-left"></i> -->
+                </div>
+                <div class="swiper-button-next">
+                    <!-- <i class="bi bi-chevron-right"></i> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- swiper -->
 
+    <!-- limited deals -->
+    <section class="limited-deals">
+        <div class="section-title-deals">
+            <p>LIMITED DEALS</p>
+        </div>
+        <div class="section-description">
+            <p>Become a member and get 10% off of your first purchase</p>
+        </div>
+        <form class="textfield">
+            <input type="email" placeholder="Enter your email here" />
+            <button type="submit" class="send">
+                <i class="bi bi-envelope"></i>
+            </button>
+        </form>
+    </section>
+    <!-- limited deals -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-desc">
+          <div class="logo">
+            <img src="IMG/Vector.png" class="logo-footer" alt="logo">
+            <p>Dekoor</p>
+          </div>
+          <p class="desc-footer">
+            Dekoor is a furniture company created to fulfill the needs of family
+            with aesthetic feeling in their furniture. Always pay attention to
+            details and give clear communication for the customers. Priority of
+            our design is comfortability.
+          </p>
+          <p class="copyright">©Copyright 2022 Dekoor</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link">
+            <h4>Support</h4>
+            <span>FAQ</span>
+            <span>Shipping & Returns</span>
+            <span>Care guide</span>
+            <span>Redeem warranty</span>
+          </div>
+          <div class="footer-link">
+            <h4>Social Media</h4>
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>Twitter</span>
+            <span>TikTok</span>
+          </div>
+          <div class="footer-link">
+            <h4>About Us</h4>
+            <span>Our Story</span>
+            <span>Designer</span>
+            <span>Craftmanship</span>
+            <span>Sustainability</span>
+          </div>
+        </div>
+      </footer>
+    <!-- footer -->
+
+    <script>
+        new Swiper('.swiper', {
+            slidesPerView: 3,
+            grid: {
+                rows: 3,
+            },
+            mousewheel: {
+                forceToAxis: true,
+            },
+        });
     </script>
 </body>
 
