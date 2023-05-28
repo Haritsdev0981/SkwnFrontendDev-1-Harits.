@@ -1,6 +1,6 @@
 # SEKAWAN MEDIA TEST
 
-Demo : 
+Demo : https://sekawan-media-tets.netlify.app/
 
 ## Tools
 
