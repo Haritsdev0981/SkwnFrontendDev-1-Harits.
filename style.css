@@ -383,6 +383,7 @@ header {
 
 .photos .swiper-wrapper {
     padding-bottom: 100px;
+    /* background-color: red; */
 }
 
 .swiper-slide {
@@ -568,9 +569,9 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    nav ul {
+    /* nav ul {
 
-    }
+    } */
   
     .desc-product-hero {
       top: 50%;
